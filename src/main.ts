@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { Home } from './app/home/home';
 
 @Component({
   selector: 'app-root',
+  imports:[Home],
   template: `
-    <h1>Hello from {{ name }}!</h1>
-    <a target="_blank" href="https://angular.dev/overview">
-      Learn more about Angular
-    </a>
+    <app-home/>
   `,
 })
 export class App {
