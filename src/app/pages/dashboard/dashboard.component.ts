@@ -14,6 +14,8 @@ import { CommonModule } from '@angular/common';
       <li><a routerLink="/observable-cancel">Observable Cancel</a></li>
       <li><a routerLink="/take-until-example">Take Until Example</a></li>
       <li><a routerLink="/performance">Performance Optimization</a></li>
+      <li><a routerLink="/infinte-scroll">Infinite-scroll</a></li>
+
     </ul>
   `,
 })

@@ -28,6 +28,12 @@ export const routes: Routes = [
     )
   },
   {
+    path:'infinte-scroll',
+    loadComponent:()=> import('./features/infinite-scroll/infinite-scroll').then(
+      (m)=>m.InfiniteScroll
+    )
+  },
+  {
     path: '**',
     redirectTo: 'dashboard',
   },

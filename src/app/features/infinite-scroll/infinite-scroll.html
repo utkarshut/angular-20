@@ -1,0 +1,8 @@
+<p>infinite-scroll works!</p>
+<div *ngFor="let item of repoData" style="font-size: 3em;padding: 0.5em; margin: 0.5em;">
+    {{item.name}}
+    {{item.id}}
+</div>
+<div *ngIf="!hasMore" class="no-more">
+    No more data
+  </div>

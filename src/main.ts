@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { RouterOutlet, provideRouter } from '@angular/router';
 import { routes } from './app/app.routes';
+import { provideHttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,CommonModule],
   template: `
     <nav class="nav">
       <a routerLink="/dashboard">🏠 Dashboard</a>
@@ -28,5 +30,5 @@ export class App {
 }
 
 bootstrapApplication(App, {
-  providers: [provideRouter(routes)], // ✅ this is crucial
+  providers: [provideRouter(routes),provideHttpClient()], // ✅ this is crucial
 });
