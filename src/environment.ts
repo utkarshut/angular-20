@@ -1,4 +1,4 @@
 export const environment = {
     production: false,
-    GITHUB_PAT: 'hhhhh'
+    GITHUB_PAT: 'hhhhcd h'
   };
